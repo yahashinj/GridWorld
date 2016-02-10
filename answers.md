@@ -19,23 +19,32 @@ Part 2.
 6. not after it comepletes one cycle
 7. yes
 
-Part 3.
+# Part 3.
 
-Set 3.
+#### Set 3.
 1. public int getRow()
 2. False
 3. (4,4)
 4. South East or 135 degrees
 5. The closest to the direction to its target
 
-Set 4.
+#### Set 4.
 
 1. Starting with the 2nd, go down 3 all the way and get 2nd from the bottom.
 2. boolean isValid(Location loc)
 3. Because it is an interface 
 4. Yes because then you have all the locations in one spot that you can call later.
 
-Set 5.
+#### Set 5.
+
+1. color direction and location
+2. north and red
+3. because we aren't puling from it, we use and change it as a class
+4. Not it only has one location
+5. An actor can move 90 degrees with 2 moves
+
+#### Set 6.
 
 1. 
-2. 
+
+
