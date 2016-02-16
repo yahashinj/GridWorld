@@ -1,4 +1,4 @@
-Part 1. 
+# Part 1. 
 1. No, if he hits something then he just turns
 2. Clockwise
 3. It moves 45 degrees clockwise
@@ -10,7 +10,7 @@ Part 1.
 9. no
 10. yes, bug on flower
 
-Part 2.
+# Part 2.
 1. how far it does
 2. how many steps it takes
 3. it will move 90 ot 45 then
@@ -45,6 +45,16 @@ Part 2.
 
 #### Set 6.
 
-1. 
+1. Thee comparison of if(gr == null) return false keeps the bg form moving outside the grid
+2. The return statement return (neighbor == instanceOfRock) which checks whether the meighbor is a rock
+3. canMove must use the isValid method from Grid in order to determine whether adjacent squares are null or not.
+4. The canMove method uses the method uses the getAdjacentLocation method to find the next location to check.
+5. the accessor methods like getGrid and getLocation are inherited and utilized.
+6. The move method will return false due to the canMove method. If that method returns true somehow, then the bug will move off the screen.
+7. It could be avoided by using getLocation over and over again, but that would be way too redundant and sloppy.
+8. The color is inherited from the class
+9. It should, the bug places flowers in spaces where the bug was and is no longer.
+10. The flower.putSelfInGrid(gr, loc) places the flower onto the grid.
+11. four times
 
 
