@@ -75,3 +75,14 @@
 4. Because the getActors method will serve the same purpose for both critters. The Chameleon will use it just the same.
 5. The Actor class must contian the getLocation method.
 6. Through the getGrid() method which it inherits from the Actor class.
+
+## Part 9.
+1. Because the CrabCritter does not need to use the processaActors method any differently than the other critters. The processActors method only removes actors from the grid if there is a conflict.
+2. A CrabCritter will, after moving, test to see if there is an actor in the three spaces in front of it. If there is, it will check what type of actor it is, and if its not a rock or another critter, then it will remove that actor from the grid.
+3. To get not only the direction in which it intends to move, but to find the locations in the directions 45 degrees to the left or right of the forward square such that it can test if those locations contian an edible item.
+4. (4,3), (4,4), and (4,5)
+5. They move one space at a time. Crabs only move sideways while criters can move in any direction. 
+6. If it is up against something, and can't move.
+7. It will not destro an instance of itself. 
+
+
