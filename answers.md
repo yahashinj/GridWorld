@@ -57,4 +57,21 @@
 10. The flower.putSelfInGrid(gr, loc) places the flower onto the grid.
 11. four times
 
+# Part 4.
 
+#### Part 7.
+1. Critter has the methods act, getActors, processActors, getMoveLocations, selectMoveLocation, and makeMove.
+2. In order to act, the critter must getActors(), processActors(), getMoveLocations(), selectMoveLocations(), makeMove().
+3. No, they should not override the method. The getActors method just returns the actors around the critter.
+4. There would be no reason to override that method, but I suppose it could if we wanted to.
+5. It can check whether there is a rock or a critter, and if there is it can remove the actor.
+6. The getLocation method to find the actor, the getMoveLocation method to decide where to move, and finally the move method to carry out the move.
+7. Critter is not the Elder Parent class, it inherits its constructor from another class.
+
+#### Part 8.
+1. Because rather than overriding act, the Chameleon overrides the processActors method which is used in the Critters act method. This changes only the part required, and not the entire process as a whole.
+2. In order to turn itself, it changes its direction and then moves in that direction. Therefore, when super is called it uses the makeMove method of the parent.
+3. You could override the makeMove method again and in making the Chameleon move, place a flower in its previous place.
+4. Because the getActors method will serve the same purpose for both critters. The Chameleon will use it just the same.
+5. The Actor class must contian the getLocation method.
+6. Through the getGrid() method which it inherits from the Actor class.
