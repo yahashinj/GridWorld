@@ -1,13 +1,13 @@
 package part4;
 
+import java.awt.Color;
+
 import info.gridworld.actor.ActorWorld;
 import info.gridworld.actor.Flower;
 import info.gridworld.actor.Rock;
 import info.gridworld.grid.Location;
 
-import java.awt.Color;
-
-public class RockHoundRunner {
+public class BlunderCritterRunner {
 	public static void main(String[] args) {
 		ActorWorld world = new ActorWorld();
 		world.add(new Location(7, 8), new Rock());
@@ -16,14 +16,10 @@ public class RockHoundRunner {
 		world.add(new Location(5, 5), new Flower(Color.PINK));
 		world.add(new Location(1, 5), new Flower(Color.RED));
 		world.add(new Location(7, 2), new Flower(Color.YELLOW));
-		for (int i=0; i<10; i++){
-			for(int n=0; n<10;n++){
-				world.add(new Location(i, n), new Rock());
-			}
-		}
-		world.add(new Location(4, 4), new RockHound());
-		world.add(new Location(5, 8), new RockHound());
+		world.add(new Location(4, 4), new BlunderCritter());
+		world.add(new Location(5, 8), new BlunderCritter());
 		
 		world.show();
+		
 	}
 }
